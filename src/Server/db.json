@@ -1,0 +1,64 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Mohamed",
+      "photo": "https://robohash.org/1",
+      "phone": "3",
+      "email": "mohamed@gmail.com",
+      "title": "Softare Engineer",
+      "company": "ItWorx",
+      "groupId": "5"
+    },
+    {
+      "id": "2",
+      "name": "Ahmed Alaa",
+      "photo": "https://robohash.org/2",
+      "phone": "333333",
+      "email": "alaa@gmail.com",
+      "title": "Softare Engineer",
+      "company": "WakeCap",
+      "groupId": "3"
+    },
+    {
+      "id": "3",
+      "name": "Omar",
+      "photo": "https://robohash.org/3",
+      "phone": "333333",
+      "email": "omar@gmail.com",
+      "title": "Interior Engineer",
+      "company": "MSA",
+      "groupId": "1"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    },
+    {
+      "id": "7",
+      "name": "Connection"
+    }
+  ]
+}
