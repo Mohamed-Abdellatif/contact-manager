@@ -139,21 +139,7 @@ const AddContact = () => {
                   />
                 </div>
                 <div className="mb-2">
-                  <select
-                    required={true}
-                    name="groupId"
-                    value={contact.groupId}
-                    onChange={updateInput}
-                    className="form-control"
-                  >
-                    <option value="">Select a Group</option>
-                    {groups &&
-                      groups.map((group) => (
-                        <option value={group.id} key={group.id}>
-                          {group.name}
-                        </option>
-                      ))}
-                  </select>
+                  
                 </div>
                 <div className="mb-2">
                   <input

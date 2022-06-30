@@ -7,16 +7,16 @@ const ViewContact = () => {
     
     const [state, setState] = useState({
         contact : [],
-        group : []
+        
     })
 
     const getData = async () => {
         try {
           const response = await ContactService.getContact(contactId);
-          const groupResponse = await ContactService.getGroup(response.data)
+          
           setState({
             contact: response.data,
-            group : groupResponse.data
+            
           });
         } catch (error) {
           console.log("error");
@@ -25,7 +25,7 @@ const ViewContact = () => {
       useEffect(() => {
         getData();
       }, [contactId]);
-    const {group, contact} = state
+    const { contact} = state
     return <>
     <section className="view-contact-intro p-3">
         <div className="container">
@@ -69,9 +69,6 @@ const ViewContact = () => {
                     </li>
                     <li className="list-group-item list-group-item-action">
                       Title: <span className="fw-bold">{contact.title}</span>
-                    </li>
-                    <li className="list-group-item list-group-item-action">
-                      Group: <span className="fw-bold">{group.name}</span>
                     </li>
                   </ul>
                 </div>

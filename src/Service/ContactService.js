@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export class ContactService{
-    static serverURL = 'http://localhost:9000'
+    static serverURL = 'http://62bdd7c6bac21839b60c2a2a.mockapi.io/'
 
     static getGroups(){
         let dataURL =`${this.serverURL}/groups`

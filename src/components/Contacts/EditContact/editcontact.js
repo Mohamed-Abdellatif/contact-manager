@@ -17,17 +17,17 @@ const EditContact = () => {
       company: "",
       groupId: "",
     },
-    groups: [],
+    
   });
 
   const getData = async () => {
     try {
       const response = await ContactService.getContact(contactId);
-      const groupResponse = await ContactService.getGroups();
+      
       setState({
         ...state,
         contact: response.data,
-        groups: groupResponse.data,
+        
       });
     } catch (error) {
       console.log("error");
@@ -58,7 +58,7 @@ const EditContact = () => {
     }
   }
 
-  const { contact, groups } = state;
+  const { contact } = state;
 
   return (
     <>
@@ -145,21 +145,7 @@ const EditContact = () => {
                   />
                 </div>
                 <div className="mb-2">
-                  <select
-                    required={true}
-                    name="groupId"
-                    value={contact.groupId}
-                    onChange={updateInput}
-                    className="form-control"
-                  >
-                    <option value="">Select a Group</option>
-                    {groups &&
-                      groups.map((group) => (
-                        <option value={group.id} key={group.id}>
-                          {group.name}
-                        </option>
-                      ))}
-                  </select>
+                  
                 </div>
                 <div className="mb-2">
                   <input

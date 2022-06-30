@@ -131,8 +131,8 @@ const ContactList = () => {
                                 <span className="fw-bold">{contact.phone}</span>
                               </li>
                               <li className="list-group-item list-group-item-action">
-                                Email:{" "}
-                                <span className="fw-bold">{contact.email}</span>
+                                Title:{" "}
+                                <span className="fw-bold">{contact.title}</span>
                               </li>
                             </ul>
                           </div>
