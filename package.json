@@ -1,7 +1,7 @@
 {
   "name": "contact-manager",
   "version": "0.1.0",
-  "homepage": "https://mohamed-abdellatif.github.io/contact-manager/",
+  "homepage": "https://mohamed-abdellatif.github.io/login",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
