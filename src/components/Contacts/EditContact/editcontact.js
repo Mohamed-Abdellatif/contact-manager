@@ -179,7 +179,7 @@ const EditContact = () => {
                       className="btn btn-primary"
                       value="Edit"
                     />
-                    <Link to={"/"} className="btn btn-dark ms-2">
+                    <Link to={"/contacts/list"} className="btn btn-dark ms-2">
                       Cancel
                     </Link>
                   </div>

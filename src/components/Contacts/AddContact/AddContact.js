@@ -161,7 +161,7 @@ const AddContact = () => {
                     className="btn btn-success"
                     value="Create"
                   />
-                  <Link to={"/"} className="btn btn-dark ms-2">
+                  <Link to={"/contacts/list"} className="btn btn-dark ms-2">
                     Cancel
                   </Link>
                 </div>

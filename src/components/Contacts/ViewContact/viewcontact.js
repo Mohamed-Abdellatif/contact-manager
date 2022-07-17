@@ -82,7 +82,7 @@ const ViewContact = () => {
             </div>
             <div className="row m-4">
               <div className="col">
-                <Link to={"/"} className="btn btn-warning ms-2">
+                <Link to={"/contacts/list"} className="btn btn-warning ms-2">
                   Back
                 </Link>
               </div>
