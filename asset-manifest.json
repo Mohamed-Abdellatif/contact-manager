@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/contact-manager/static/css/main.1a4c10ef.css",
-    "main.js": "/contact-manager/static/js/main.02758444.js",
+    "main.css": "/contact-manager/static/css/main.2747ec0e.css",
+    "main.js": "/contact-manager/static/js/main.77cacd71.js",
     "static/js/787.f87af6a6.chunk.js": "/contact-manager/static/js/787.f87af6a6.chunk.js",
     "static/media/Montserrat-BoldItalic.ttf": "/contact-manager/static/media/Montserrat-BoldItalic.042630452ddd7b606a17.ttf",
     "static/media/Montserrat-Italic.ttf": "/contact-manager/static/media/Montserrat-Italic.ce3a49f8e6c790a13ba0.ttf",
@@ -21,12 +21,12 @@
     "static/media/montserrat-v12-latin-900.woff2": "/contact-manager/static/media/montserrat-v12-latin-900.041d8fc07df676518717.woff2",
     "static/media/Loading_icon.gif": "/contact-manager/static/media/Loading_icon.1a32f552ee5280e2aef9.gif",
     "index.html": "/contact-manager/index.html",
-    "main.1a4c10ef.css.map": "/contact-manager/static/css/main.1a4c10ef.css.map",
-    "main.02758444.js.map": "/contact-manager/static/js/main.02758444.js.map",
+    "main.2747ec0e.css.map": "/contact-manager/static/css/main.2747ec0e.css.map",
+    "main.77cacd71.js.map": "/contact-manager/static/js/main.77cacd71.js.map",
     "787.f87af6a6.chunk.js.map": "/contact-manager/static/js/787.f87af6a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a4c10ef.css",
-    "static/js/main.02758444.js"
+    "static/css/main.2747ec0e.css",
+    "static/js/main.77cacd71.js"
   ]
 }
