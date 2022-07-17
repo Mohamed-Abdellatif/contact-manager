@@ -68,7 +68,7 @@ const DeletedContacts = () => {
               <div className="col">
                 <p className="h3 fw-bold">
                   Recycle Bin
-                  <Link to={"/"} className="btn btn-primary m-2">
+                  <Link to={"/contacts/list"} className="btn btn-primary m-2">
                     Back
                   </Link>
                 </p>
