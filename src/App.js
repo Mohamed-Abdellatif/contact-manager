@@ -31,7 +31,7 @@ function App() {
     <>
       <Navbar loggedIn={loggedIn} logOut={logOut}/>
       <Routes>
-        <Route path="/" element={<Navigate to={"/login"} />} /> 
+        <Route path="/contact-manager" element={<Navigate to={"/login"} />} /> 
         <Route path="/contacts/list" element={<ContactList logIn={logIn} loggedIn={loggedIn}/>} />
         <Route path="/contacts/add" element={<AddContact />} />
         <Route path="/contacts/edit/:contactId" element={<EditContact />} />
