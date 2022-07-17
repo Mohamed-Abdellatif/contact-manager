@@ -40,7 +40,7 @@ const AddContact = () => {
   })
   }
 
-  const SubmitForm = async (e) => {
+  const submitForm = async (e) => {
     e.preventDefault()
     try{
         const response = await ContactService.createContact(state.contact)
@@ -50,7 +50,7 @@ const AddContact = () => {
     }
     catch(error){
         console.log("error")
-        navigate("/contacts/add", {replace: false})
+        navigate("/contacts/add", {replace : false})
     }
   }
   const{contact, groups} = state
@@ -71,7 +71,7 @@ const AddContact = () => {
           </div>
           <div className="row">
             <div className="col-md-4">
-              <form onSubmit={SubmitForm}>
+              <form onSubmit={submitForm}>
                 <div className="mb-2">
                   <input
                     required={true}
@@ -139,7 +139,21 @@ const AddContact = () => {
                   />
                 </div>
                 <div className="mb-2">
-                  
+                  <select
+                    required={true}
+                    name="groupId"
+                    value={contact.groupId}
+                    onChange={updateInput}
+                    className="form-control"
+                  >
+                    <option value="">Select a Group</option>
+                    {groups &&
+                      groups.map((group) => (
+                        <option value={group.id} key={group.id}>
+                          {group.name}
+                        </option>
+                      ))}
+                  </select>
                 </div>
                 <div className="mb-2">
                   <input

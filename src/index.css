@@ -6,3 +6,19 @@ body {
 }
 
 
+.card {
+  transition: all 1s;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+h3{
+  text-align: end;
+  padding: 20px;
+}
+
+h4{
+  padding: 10px;
+}

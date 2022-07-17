@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
-import {Routes, Route, Navigate} from 'react-router-dom'
-import ContactList from './components/Contacts/ContactList/contactlist';
-import AddContact from './components/Contacts/AddContact/AddContact';
-import EditContact from './components/Contacts/EditContact/editcontact';
-import ViewContact from './components/Contacts/ViewContact/viewcontact';
-import Navbar from './components/Navbar/NavBar';
+import logo from "./logo.svg";
+import "./App.css";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import ContactList from "./components/Contacts/ContactList/contactlist";
+import AddContact from "./components/Contacts/AddContact/AddContact";
+import EditContact from "./components/Contacts/EditContact/editcontact";
+import ViewContact from "./components/Contacts/ViewContact/viewcontact";
+import Navbar from "./components/Navbar/NavBar";
+import DeletedContacts from "./components/Contacts/DeletedContacts/DeletedContacts";
+import { useState } from "react";
+import LoginPage from "./components/Contacts/LoginPage/LoginPage";
+import Register from "./components/Contacts/Register/Register";
 
 
 function App() {
+  const navigate = useNavigate();
+
+  const [loggedIn,setLoggedIn] = useState(false)
+
+  const logIn = () => {
+    setLoggedIn(true);
+    console.log(loggedIn)
+    navigate('/contacts/list')
+  }
+  
+  const logOut = () => {
+    setLoggedIn(false);
+    console.log(loggedIn)
+    navigate('/login')
+  }
+
   return (
     <>
-    <Navbar/>
-    <Routes>
-    <Route path="/" element={<Navigate to={"/contacts/list"} />} />
-      <Route path="/contacts/list" element={<ContactList/>} />
-      <Route path="/contacts/add" element={<AddContact/>}/>
-      <Route path="/contacts/edit/:contactId" element={<EditContact/>}/>
-      <Route path="/contacts/view/:contactId" element={<ViewContact/>}/>
-    </Routes>
+      <Navbar loggedIn={loggedIn} logOut={logOut}/>
+      <Routes>
+        <Route path="/" element={<Navigate to={"/login"} />} /> 
+        <Route path="/contacts/list" element={<ContactList logIn={logIn} loggedIn={loggedIn}/>} />
+        <Route path="/contacts/add" element={<AddContact />} />
+        <Route path="/contacts/edit/:contactId" element={<EditContact />} />
+        <Route path="/contacts/view/:contactId" element={<ViewContact />} />
+        <Route path="/contacts/recycle-bin" element={<DeletedContacts />} />
+        <Route path="/login" element={<LoginPage logIn={logIn} />} />
+        <Route path="/register" element={<Register logIn={logIn}/>} />
+      </Routes>
     </>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "contact-manager",
-  "homepage": "https://mohamed-abdellatif.github.io/contact-manager",
   "version": "0.1.0",
+  "homepage": "https://mohamed-abdellatif.github.io/contact-manager/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -11,6 +11,7 @@
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

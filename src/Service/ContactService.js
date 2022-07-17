@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export class ContactService{
-    static serverURL = 'http://62bdd7c6bac21839b60c2a2a.mockapi.io/'
+    static serverURL = 'https://62bdd7c6bac21839b60c2a2a.mockapi.io/'
 
     static getGroups(){
         let dataURL =`${this.serverURL}/groups`
@@ -36,6 +36,26 @@ export class ContactService{
 
     static deleteContact(contactId){
         let dataURL = `${this.serverURL}/contacts/${contactId}`
+        return axios.delete(dataURL)
+    }
+
+    static getDeletedContacts(){
+        let dataURL =`${this.serverURL}/deletedContacts`;
+        return axios.get(dataURL);
+    }
+
+
+    static addToDeletedContacts(contact){
+        let dataURL = `${this.serverURL}/deletedContacts`
+        return axios.post(dataURL, contact)
+    }
+    static getDeletedContact(contactId){
+        let dataURL = `${this.serverURL}/deletedContacts/${contactId}`;
+        return axios.get(dataURL)
+    }
+
+    static deleteContactFromBin(contactId){
+        let dataURL = `${this.serverURL}/deletedContacts/${contactId}`
         return axios.delete(dataURL)
     }
 }
