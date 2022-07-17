@@ -19,13 +19,11 @@ function App() {
 
   const logIn = () => {
     setLoggedIn(true);
-    console.log(loggedIn)
     navigate('/contacts/list')
   }
   
   const logOut = () => {
     setLoggedIn(false);
-    console.log(loggedIn)
     navigate('/login')
   }
 
