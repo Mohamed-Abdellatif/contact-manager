@@ -7,7 +7,7 @@ const Navbar = ({ loggedIn, logOut }) => {
       <nav className="navbar navbar-dark bg-dark navbar-expand-sm ">
         <div className="container">
           <Link to={"/"} className="navbar-brand">
-            <i className="fa fa-mobile text-warning" /> Contactdfds{" "}
+            <i className="fa fa-mobile text-warning" /> Contactgdfgfdg{" "}
             <span className="text-warning fw-bold">Manager</span>
           </Link>
           {loggedIn ? (
